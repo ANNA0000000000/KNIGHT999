@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657555779-Yb272Lvb" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "พี่จ๋ารีบมา‼️",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "mega",
+      "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1020140725184253985/1029334560774815754/02-01.jpg",
+                "size": "full",
+                "align": "center",
+                "aspectMode": "fit"
+              }
+            ],
+            "margin": "sm",
+            "cornerRadius": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://www.img.in.th/images/6b9b1d2613d4237a9678da260ad2e1c8.png",
+                    "size": "5xl",
+                    "aspectRatio": "7:1"
+                  }
+                ],
+                "backgroundColor": "#bd0401",
+                "borderWidth": "semi-bold",
+                "cornerRadius": "xl",
+                "offsetTop": "xs",
+                "offsetBottom": "xs",
+                "margin": "lg",
+                "borderColor": "#990901"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "เว็บน้องใหม่มาแรง  ไม่ต้องฝากก่อน",
+                    "color": "#FFFFFF",
+                    "align": "center",
+                    "weight": "bold"
+                  },
+                  {
+                    "type": "text",
+                    "text": "มารับไปเล่นฟรีๆ แจกไม่อั้น ‼️",
+                    "color": "#FFFFFF",
+                    "align": "center",
+                    "weight": "bold"
+                  }
+                ],
+                "margin": "lg"
+              }
+            ],
+            "backgroundColor": "#3d0101",
+            "cornerRadius": "xl",
+            "margin": "sm",
+            "borderColor": "#7f2f0c",
+            "borderWidth": "semi-bold"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://www.img.in.th/images/4801d65ecb90f4c8fa7c05617f7beb3c.png",
+                    "size": "full",
+                    "aspectRatio": "5:2"
+                  }
+                ],
+                "backgroundColor": "#000000",
+                "borderColor": "#7f2f0c",
+                "borderWidth": "semi-bold",
+                "cornerRadius": "xl",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://lin.ee/m6MaCC2"
+                },
+                "paddingTop": "md"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://www.img.in.th/images/48b74eca108834757cd257209807af9b.png",
+                    "size": "xxl",
+                    "aspectRatio": "5:2"
+                  }
+                ],
+                "backgroundColor": "#000000",
+                "borderColor": "#7f2f0c",
+                "borderWidth": "semi-bold",
+                "cornerRadius": "xl",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://lin.ee/m6MaCC2"
+                },
+                "paddingTop": "md"
+              }
+            ],
+            "margin": "sm"
+          }
+        ],
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#000000",
+          "endColor": "#000000",
+          "centerColor": "#e74519"
+        },
+        "borderWidth": "semi-bold",
+        "cornerRadius": "xl",
+        "paddingAll": "none"
+      }
+    }
+  ]
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
